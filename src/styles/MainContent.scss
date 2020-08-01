@@ -1,0 +1,50 @@
+$bg: #27333E;
+$container: #1B252C;
+$accent: #fff;
+$border: #5DA3EE;
+
+@import url('https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap');
+
+body{
+    background-color: $bg;
+    font-family: 'Antic Slab', serif;
+}
+
+@mixin box {
+    flex: 1;
+    flex-basis: 300px;
+    margin: 30px;
+    height: 500px;
+    border: 1px solid $border;
+    padding: 20px;
+    font-size: 1.3em;
+    background-color: $container;
+    color: $accent;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    textarea{
+        @include box;
+        outline: none;
+        font-family: 'Antic Slab', serif;
+        font-size: 1em;
+    }
+    .output{
+        @include box;
+        //background-color: darken($border-color, 5%);
+        overflow-y: scroll;
+    }
+}
+
+
+
+
+
+@media (max-width: 600px){
+    section{
+        flex-direction: column;
+    }
+}
