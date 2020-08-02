@@ -14,7 +14,6 @@ Markdown Previewer
 ##### It's a h5
 ###### It's a h6
 
-
 `
 
 class MainContent extends React.Component{

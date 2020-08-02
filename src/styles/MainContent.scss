@@ -10,6 +10,31 @@ body{
     font-family: 'Antic Slab', serif;
 }
 
+a{
+    color: grey;
+  }
+  code{
+    align-items: center;
+    background: lighten($container, 5%);
+    color: lighten($container, 40%);
+  }
+  
+  blockquote{
+    position: relative;
+    border-left: 10px solid lighten($container, 20%);
+    padding-left: 10px;
+    background: lighten($container, 40%)
+  }
+
+  ::-webkit-scrollbar, ::-webkit-scrollbar-corner{
+    background: $bg;
+  }
+  ::-webkit-scrollbar-thumb{
+    background: $border;
+    box-shadow: 0 0 1px 1px #fff;
+  }
+  
+
 @mixin box {
     flex: 1;
     flex-basis: 300px;
